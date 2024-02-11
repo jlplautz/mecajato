@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "mecajato"
+version = "0.1.0"
+description = "Project oriented by Pythonando e and is going to be a mechanical and wash cars."
+authors = ["Jorge Luiz Plautz <jorge.plautz@gmail.com>"]
+license = "GLPV3"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "^5.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
