@@ -10,6 +10,7 @@ class Cliente(models.Model):
     def __str__(self) -> str:
         return self.nome
 
+
 class Carro(models.Model):
     carro = models.CharField(max_length=50)
     placa = models.CharField(max_length=8)

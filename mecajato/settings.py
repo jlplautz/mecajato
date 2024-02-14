@@ -21,7 +21,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-jqv63((4k-xr(yn^l29blo*u2iaycn=f2hu==lgkfrr5@ppkix'
+SECRET_KEY = (
+    'django-insecure-jqv63((4k-xr(yn^l29blo*u2iaycn=f2hu==lgkfrr5@ppkix'
+)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -38,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'mecajato.clientes',    
+    'mecajato.clientes',
+    'mecajato.servicos',
 ]
 
 MIDDLEWARE = [
@@ -122,7 +125,7 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'mecajato/templates/static'),)
 STATIC_ROOT = os.path.join('mecajato/static')
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = "/media/"
+MEDIA_URL = '/media/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
